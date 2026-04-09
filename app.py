@@ -19,7 +19,7 @@ from google.protobuf.message import DecodeError
 app = Flask(__name__)
 
 def load_tokens(server_name):
-    REPO = "mahicheatsyt-maker/Tokens/tree/main"
+    REPO = "mahicheatsyt-maker/Tokens"
     BASE_URL = f"https://raw.githubusercontent.com/{REPO}/main/"
     
     try:
