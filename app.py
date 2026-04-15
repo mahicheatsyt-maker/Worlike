@@ -202,7 +202,7 @@ def fetch_player_info(uid):
 @app.route('/like', methods=['GET'])
 def handle_requests():
     uid = request.args.get("uid")
-    server_name = request.args.get("server_name", "").upper()
+    region = request.args.get("region", "").upper()
     if not uid:
         return jsonify({"error": "UID is required"}), 400
 
