@@ -182,7 +182,7 @@ def decode_protobuf(binary):
 
 def fetch_player_info(uid):
     try:
-        url = f"https://wotaxxdev-api.vercel.app/info?uid={uid}"
+        url = f"http://api.farhanexe.xyz/info?uid={uid}"
         response = requests.get(url, timeout=5)
         if response.status_code == 200:
             data = response.json()
